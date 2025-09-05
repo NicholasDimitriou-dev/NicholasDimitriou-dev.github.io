@@ -1,0 +1,64 @@
+
+body{
+           background-color: #8287e8;
+     }
+
+.row{
+    display:flex;
+     
+    justify-content:center; 
+    
+}
+#contactBox{
+    text-align: center; 
+    width:40%
+}
+
+.photoDem{
+   margin: 0 auto;  
+   text-align: center;
+   width: 100%;
+   border-radius: 25px;
+}
+p{
+    text-align: center;
+}
+figure{
+    text-align: center; 
+    margin: 0 auto;
+}
+h1{
+    text-align:center; 
+    width: 100%;
+}
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer{
+    font-size: 10px;
+    color: yellow;
+}
+ul{
+    text-align: center;
+    list-style-position: inside;
+}
+table{
+    text-align: center; 
+    margin: 0 auto;
+}
+a{
+    border:5px solid yellow; 
+    background-color: #b03ebd;
+    color:black;
+    padding: 15px;
+    margin: 50px;
+
+}
+.onPage{
+     border-radius: 25px;
+}
+a:hover{
+   background-color: #bedbed; 
+}
