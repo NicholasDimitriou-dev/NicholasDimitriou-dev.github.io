@@ -19,12 +19,14 @@ body{
     border: 5px ridge rgb(218, 226, 108);;
     background-color: rgb(189, 189, 189);
     padding: 5px;
+    outline: 5px blue ridge;
 }
 button{
-    border: 5px solid rgb(25, 9, 170);
+    border: 5px solid blue;
     background-color: rgb(189, 189, 189);
     padding: 0px;
     margin:10px;
+    
 }
 .notCurrent{
     border: 5px solid rgb(25, 9, 170);
@@ -40,6 +42,11 @@ button:hover{
 }
 b{
     text-decoration-line:underline;
+}
+img{
+    outline-style: solid;
+    outline: 5px black;
+
 }
 
 

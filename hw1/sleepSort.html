@@ -26,11 +26,14 @@
             <figure>
 
                 <p>
-                    info here
-                </p>
-            
-                <p>
-                    info here
+                    Sleep sort is one of the most unusual sorting methods that I researched. Rather than seeking to sort over iterations it 
+                    does it in one pass. It assigns a timer to each value equal to how big the value is and then once that timer elapses it 
+                    appends the value to the end of the array. This of course leads to its biggest problem: it runs for time equal to the 
+                    biggest value in the array. This means its big O notation is n+max(value) so depending on the biggest value that can be 
+                    10s or 1000s rather than the length of the array. Another very common issue is incorrect attribution. Lets say for instance 
+                    you have 100 and 100.000001 in the array if your computer isn't fast enough it might put these 2 items out of order and you 
+                    have to restart it. In conclusion you will truly never need this sorting method; it's slow and storage heavy so I would 
+                    suggest finding another.
                 </p>
             </figure>
             <figure class="picture">
@@ -57,7 +60,9 @@
             <div class = "list">
                 Sleep Sort:
                 <ol>
-                    <li><a href="null" target="_blank">  null </a></li>
+                    <li><a href="https://www.geeksforgeeks.org/dsa/sleep-sort-king-laziness-sorting-sleeping/" target="_blank"> geeks for geeks</a></li>
+                    <li><a href="https://it.wikipedia.org/wiki/Sleep_sort" target="_blank"> Wikipedia for some reason only exists italian but google should allow you to translate over after with the translate button on the top</a></li>
+                    <li><a href="https://codefinity.com/blog/The-Most-Bizarre-Sorting-Algorithms" target="_blank"> Codefinity </a></li>
                 </ol>
             </div>
 
