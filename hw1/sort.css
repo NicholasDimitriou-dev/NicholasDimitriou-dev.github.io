@@ -38,6 +38,9 @@ button:hover{
 .picture{
     text-align: center;
 }
+b{
+    text-decoration-line:underline;
+}
 
 
 

@@ -15,10 +15,10 @@
     </div>
         <nav>
             <div class = "centering">
-                <button class="notCurrent"><a href="homePage.html"> Sorting Methods: a quick introduction</a></button>
-                <button><a class ="currentPage" href="bogoSort.html"> bogoSort</a></button>
-                <button class="notCurrent"><a href="miracleSort.html"> miracleSort </a></button>
-                <button class="notCurrent"><a href="sleepSort.html"> sleepSort </a></button>
+                <button class="notCurrent" onclick="document.location='homePage.html'">Sorting Methods: a quick introduction</button>
+                <button class="currentPage"  onclick="document.location='bogoSort.html'"> bogoSort</button>
+                <button class="notCurrent" onclick="document.location='miracleSort.html'"> miracleSort </button>
+                <button class="notCurrent"  onclick="document.location='sleepSort.html'"> sleepSort </button>
             </div>
         </nav>
         <hr>
@@ -26,11 +26,12 @@
             <figure>
 
                 <p>
-                    BogoSort 
-                </p>
-            
-                <p>
-                    info here
+                    Bogosort is one of simplest sorting methods for a person to implement. BogoSort or as a lot of people call it random sort, 
+                    randomizes the array and checks if the array is sorted. If not it rerandomizes the array and checks again. But don't let its 
+                    simplicity fool you; it has several problems. For one it is incredibly inefficient the average performance of the sorting
+                     method has a Big O notation of n * n!. This means it would run on average <b>36288000 (10*10!)</b> times for an array of 10 items. 
+                     But it does have some benefits that should be acknowledged for example it wont require a lot of memory to run which if you are in 
+                     need of space saving sorting methods it is an option. 
                 </p>
             </figure>
             <figure class = "picture">
@@ -44,18 +45,19 @@
             <div  class = "list">
             General:
                 <ul>
-                    <br>
-                    <li><a href="https://www.youtube.com/watch?v=ktgxMtWMflU" target="_blank"> Video about 10 exmples of werid sorting methods</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ktgxMtWMflU" target="_blank"> Video about 10 examples of weird sorting methods</a></li>
                     <li><a href="https://medium.com/@atishayjn/the-worst-sorting-algorithms-652f213a6a04" target="_blank">Bad sorting algorithms with why they're bad</a></li>
-                    <li><a href="https://vinodhgowda.medium.com/the-worst-ways-to-sort-a-comedic-crash-course-in-inefficiency-010d22e139f8" target="_blank">Additional resourse about sorting methods with explinations about thier cons  </a></li>
+                    <li><a href="https://vinodhgowda.medium.com/the-worst-ways-to-sort-a-comedic-crash-course-in-inefficiency-010d22e139f8" target="_blank">Additional resources about sorting methods with explanations about their cons</a></li>
+                    <li><a href="https://www.reddit.com/r/AskProgramming/comments/1cie6kg/is_there_worst_sort_algorithm/" target="_blank">Popular consensus about bad sorting methods</a>
+                    <li><a href="https://stackoverflow.com/questions/2609857/are-there-any-worse-sorting-algorithms-than-bogosort-a-k-a-monkey-sort" target="_blank">More consensus about bad sorting methods</a>
                 </ul>
             </div>
             
             <div class= "list">
                 Bogo Sort:
                 <ol>
-                    <br>
-                    <li><a href="https://www.youtube.com/watch?v=ktgxMtWMflU" target="_blank"> a  bunch of filler text to bugFix for right now </a></li>
+                    <li><a href="https://www.geeksforgeeks.org/dsa/bogosort-permutation-sort/" target="_blank"> geeks for geeks </a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Bogosort" target="_blank"> Wikipedia </a></li>
                 </ol>
             </div>
 
