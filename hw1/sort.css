@@ -1,0 +1,43 @@
+a:hover{
+   background-color: #0e6094; 
+}
+.centering{
+    display:flex;
+    justify-content:center; 
+    
+}
+.list{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+body{
+    background-color: rgb(150, 125, 125);
+}
+.currentPage{
+    border: 5px ridge rgb(218, 226, 108);;
+    background-color: rgb(189, 189, 189);
+    padding: 5px;
+}
+button{
+    border: 5px solid rgb(25, 9, 170);
+    background-color: rgb(189, 189, 189);
+    padding: 0px;
+    margin:10px;
+}
+.notCurrent{
+    border: 5px solid rgb(25, 9, 170);
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    margin:10px;
+}
+button:hover{
+    background-color: #0e6094;
+}
+.picture{
+    text-align: center;
+}
+
+
+
