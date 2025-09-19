@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: JS Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    <h1>Binary quiz</h1>
+    <h1>Score:</h1><h1 id="score"></h1>
+    <hr>
+    <div>1.How many different outputs can a 3 bit binary string represent.</div>
+    <p id="answer1"></p>
+    <label>
+        <input type="radio" name="q1" value="1">1
+    </label>
+     <label>
+        <br><input type="radio" name="q1" value="3">3
+    </label>
+     <label>
+        <br><input type="radio" name="q1" value="6">6
+    </label>
+     <label>
+        <br><input type="radio" name="q1" value="8">8
+     </label>
+    <hr>
+    <div>2.Binary is base ___?</div>
+    <p id="answer2"></p>
+    <label>
+        <input id="Base" type="number" min="1" max="10" step="1">
+    </label>
+    <div>3. What is 8 in binary </div>
+    <p id="answer3"></p>
+    
+        <select id="selection">
+            <option>1000</option>
+            <option>100</option>
+            <option>1</option>
+            <option>10</option>
+        </select>
+    <hr>
+    <div>4. Write 11 in binary </div>
+    <p id="answer4"></p>
+        <input id="tBx" type="text">
+        
+    <div>5. Select true statements </div>
+     <p id="answer5"></p>
+    <label>
+        <input type="checkbox" id="q4a" value="Used in CS"> Used in CS
+    </label>
+    <label>
+        <input type="checkbox" id="q4b" value="Has a limit of postive numbers to display"> Has a limit of postive numbers to display
+    </label>   
+    <label>
+        <input type="checkbox" id="q4c" value="Can be switched to any number in base 10"> Can be switched to any number in base 10
+    </label> 
+
+    
+
+    <!-- <div>3. What CSS property changes the text color? </div>
+    
+    <div id="q3Options"></div> -->
+
+    <br>
+    
+    <hr>
+    <button> Submit Quiz</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
