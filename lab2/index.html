@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,4 +34,55 @@
     <script src="js/script.js"></script>
     
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8">
+        <link href="css/guess.css"
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1>Guess the Number!</h1>
+            <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        </header>
+        <br>
+        <div id="main">
+          <div id="space">
+             <div id = "wins">Wins:</div>
+             <div id = "loses">Loses:</div>
+          </div>
+          <br>
+          <div id="space">
+          Enter a guess: 
+          </div>
+          <div id="space">
+          <input type="text" id="playerGuess" size="5"> 
+          </div> 
+          <div id="space">      
+          <button id="guessBtn"> Guess </button> <br>
+          </div>
+          <div id="space">
+          <button id="resetBtn"> Reset </button>
+          </div>
+          <br>
+          <div id="space">
+          <div id="feedback"></div> 
+          </div>
+          <br>
+          <div id="space">
+          <div id="attemptLeft">Attempts Made:</div>
+          </div>
+          <br>
+          <div id="space">
+          <div>Previous Guess:
+                <span id="guesses"></span>
+          </div>
+          </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
 </html>

@@ -1,20 +1,14 @@
-#yourGuess{
-    font-size: 20px;
-}
-div{
+#space{
     border: black solid 1px;
     padding: 5px;
     display: flex;
+    justify-content:center
 }
 body{
     background-color: rgb(45, 111, 168);
     text-align: center;
 }
-#guessBox{
-    width: 50%;
-    height: 10%;
-    border: 5px solid;
-}
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -31,4 +25,13 @@ button:hover{
 h1:hover{
     color: red;
 }
+h2:hover{
+    color:red
 
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#playerGuess{
+    width: 100vw;
+}
