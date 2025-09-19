@@ -22,9 +22,10 @@ function initializeGame() {
    playerGuess.focus();
    playerGuess.textContent = "";
    document.querySelector("#guesses").textContent = "";
+   document.querySelector("#feedback").textContent = "";
    document.querySelector("#attemptLeft").textContent = "Attempts Made: ";
    document.querySelector("#wins").textContent = "Wins: "+win;
-    document.querySelector("#loses").textContent = "Loses: "+lose;
+   document.querySelector("#loses").textContent = "Loses: "+lose;
 }
 function checkGuess(){
     let feedback = document.querySelector("#feedback");
