@@ -1,40 +1,49 @@
 #space{
-    border: black solid 1px;
+    border: red solid 1px;
+    border-radius: 10px;
     padding: 5px;
     display: flex;
     justify-content:center
-    
+    /* 4 */
 }
 body{
     background-color: rgb(45, 111, 168);
     text-align: center;
+    /* 6 */
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    /* 7 */
 }
 #guessBtn{
     border-radius: 5px;
     border-color: blueviolet;
     background-color: aquamarine;
     border: 5px ridge;
+    /* 11 */
 
 }
 #guessBtn:hover{
     background-color: greenyellow;
+    /* 12 */
 }
 h1:hover{
     color: red;
+    /* 13 */
 }
 h2:hover{
     color:red;
+    /* 14 */
 
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
+    /* 15 */
 }
 #playerGuess{
     width: 100vw;
+    /* 16 */
 }
 #resetBtn{
     padding: 5px;
@@ -42,27 +51,25 @@ h2{
     border-color: rgb(226, 43, 52);
     background-color: rgb(151, 10, 57);
     border: 5px solid;
+    /* 21 */
 }
 #resetBtn:hover{
     background-color: blueviolet;
+    /* 22 */
 }
-#attemptLeft{
+.font{
     font-size: 30px;
+    /* 23 */
 }
-#feedback{
+.success{
     font-size: 30px;
-}
-#guesses{
-    font-size: 30px;
-}
-#prevGuess{
-    font-size: 30px;
+    padding: 5px;
+    /* 25 */
 }
 #wins{
-    font-size: 30px;
-    padding: 5px;
+    color: rgb(119, 255, 119);
 }
 #loses{
-    font-size: 30px;
-    padding: 5px;
-}
+    color: red;
+} 
+
