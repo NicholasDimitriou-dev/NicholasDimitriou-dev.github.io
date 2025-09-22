@@ -1,8 +1,9 @@
 document.querySelector("button").addEventListener("click", gradeQuiz);
 
-//displayQ3Options();
+displayQ3Options();
 function gradeQuiz(){
     let userAnswer1 = document.querySelector("input[name=q1]:checked").value;
+    console.log(userAnswer1);
     let userAnswer2 = document.querySelector("#Base").value; 
     let userAnswer3 = document.querySelector("#selection").value;
     let userAnswer4 = document.querySelector("#tBx").value;
@@ -66,28 +67,32 @@ function gradeQuiz(){
     }
     let answr1 = document.querySelector("#score")
         answr1.textContent = score;
+    if(score >= 80){
+        congrats.textContent += "Congrats on the great score";
+        congrats.style.color = "green";
+    }
 }
 
-// function displayQ3Options(){
+function displayQ3Options(){
 
-//     let q3Options = ["font-color", "fontColor", "color", "textColor"];
-//     q3Options = _.shuffle(q3Options);
+    let q3Options = ["1", "3", "6", "8"];
+    q3Options = _.shuffle(q3Options);
 
-//     for (let i of q3Options) {
+    for (let i of q3Options) {
 
-//         let inputElement = document.createElement("input");
-//         inputElement.type = "radio";
-//         inputElement.name = "q3";
-//         inputElement.value = i;
-//         console.log(inputElement);
+        let inputElement = document.createElement("input");
+        inputElement.type = "radio";
+        inputElement.name = "q1";
+        inputElement.value = i;
+        console.log(inputElement);
 
-//         let labelElement = document.createElement("label");
-//         labelElement.textContent = i;
-//         labelElement.prepend(inputElement);
+        let labelElement = document.createElement("label");
+        labelElement.textContent = i;
+        labelElement.prepend(inputElement);
 
-//         document.querySelector("#q3Options").append(labelElement);
+        document.querySelector("#q3Options").append(labelElement);
         
-//     }
+    }
 
 
-// }
+}

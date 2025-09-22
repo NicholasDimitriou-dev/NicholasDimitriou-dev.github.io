@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1>Binary quiz</h1>
+    <p id="congrats"></p>
     <h1>Score:</h1><h1 id="score"></h1>
     <hr>
     <div>1.How many different outputs can a 3 bit binary string represent.</div>
-    <p id="answer1"></p>
-    <label>
+    <div id="q3Options"></div> 
+    <h2><p id="answer1"></p></h2>
+    <!-- <label>
         <input type="radio" name="q1" value="1">1
     </label>
      <label>
@@ -23,14 +25,15 @@
     </label>
      <label>
         <br><input type="radio" name="q1" value="8">8
-     </label>
+     </label> -->
     <hr>
-    <div>2.Binary is base ___?</div>
+    <div><h2>2.Binary is base ___?</h2></div>
     <p id="answer2"></p>
     <label>
         <input id="Base" type="number" min="1" max="10" step="1">
     </label>
-    <div>3. What is 8 in binary </div>
+    <hr>
+    <div><h2>3. What is 8 in binary</h2></div>
     <p id="answer3"></p>
     
         <select id="selection">
@@ -40,11 +43,11 @@
             <option>10</option>
         </select>
     <hr>
-    <div>4. Write 11 in binary </div>
+    <div><h2>4. Write 11 in binary</h2></div>
     <p id="answer4"></p>
         <input id="tBx" type="text">
-        
-    <div>5. Select true statements </div>
+    <hr>   
+    <div><h2>5. Select true statements</h2></div>
      <p id="answer5"></p>
     <label>
         <input type="checkbox" id="q4a" value="Used in CS"> Used in CS
@@ -55,15 +58,7 @@
     <label>
         <input type="checkbox" id="q4c" value="Can be switched to any number in base 10"> Can be switched to any number in base 10
     </label> 
-
-    
-
-    <!-- <div>3. What CSS property changes the text color? </div>
-    
-    <div id="q3Options"></div> -->
-
     <br>
-    
     <hr>
     <button> Submit Quiz</button>
     <script src="js/script.js"></script>
