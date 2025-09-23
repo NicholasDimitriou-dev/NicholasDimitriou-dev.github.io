@@ -5,59 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3: JS Quiz</title>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <link href="css/quiz.css"
+            rel="stylesheet">
 </head>
 <body>
     <h1>Binary quiz</h1>
     <p id="congrats"></p>
-    <h1>Score:</h1><h1 id="score"></h1>
+    <h1 id="score">Score:</h1>
+    <h1 id="totalTime">Total time taken: </h1>
     <hr>
-    <div>1.How many different outputs can a 3 bit binary string represent.</div>
+    <div class="qs"></div>
+    <div><h2>1.How many different outputs can a 3 bit binary string represent.</h2></div>
+    <div>
     <div id="q3Options"></div> 
-    <h2><p id="answer1"></p></h2>
-    <!-- <label>
-        <input type="radio" name="q1" value="1">1
-    </label>
-     <label>
-        <br><input type="radio" name="q1" value="3">3
-    </label>
-     <label>
-        <br><input type="radio" name="q1" value="6">6
-    </label>
-     <label>
-        <br><input type="radio" name="q1" value="8">8
-     </label> -->
+    </div>
+    <p id="answer1"></p>
+    <img id="img1c" src="img/check.jpg" hidden>
+    <img id="img1w" src="img/wrong.png" hidden>
     <hr>
+    </div>
+    <div class="qs"></div>
     <div><h2>2.Binary is base ___?</h2></div>
     <p id="answer2"></p>
+    <img id="img2c" src="img/check.jpg" hidden>
+    <img id="img2w" src="img/wrong.png" hidden>
     <label>
         <input id="Base" type="number" min="1" max="10" step="1">
     </label>
+    </div>
     <hr>
+    <div class="qs"></div>
     <div><h2>3. What is 8 in binary</h2></div>
-    <p id="answer3"></p>
-    
+    <p id="answer3"></p> 
+    <img id="img3c" src="img/check.jpg" hidden>
+    <img id="img3w" src="img/wrong.png" hidden>
         <select id="selection">
             <option>1000</option>
             <option>100</option>
             <option>1</option>
             <option>10</option>
         </select>
+    </div>
     <hr>
+    <div class="qs"></div>
     <div><h2>4. Write 11 in binary</h2></div>
     <p id="answer4"></p>
+    <img id="img4c" src="img/check.jpg" hidden>
+    <img id="img4w" src="img/wrong.png" hidden>
         <input id="tBx" type="text">
-    <hr>   
+    </div>
+    <hr> 
+    <div class="qs"></div>  
     <div><h2>5. Select true statements</h2></div>
      <p id="answer5"></p>
+     <img id="img5c" src="img/check.jpg" hidden>
+    <img id="img5w" src="img/wrong.png" hidden>
+    <div class="qs"></div>  
     <label>
         <input type="checkbox" id="q4a" value="Used in CS"> Used in CS
     </label>
+    <div class="qs"></div> 
     <label>
         <input type="checkbox" id="q4b" value="Has a limit of postive numbers to display"> Has a limit of postive numbers to display
-    </label>   
+    </label>
+    <div class="qs"></div>    
     <label>
         <input type="checkbox" id="q4c" value="Can be switched to any number in base 10"> Can be switched to any number in base 10
     </label> 
+    </div>
     <br>
     <hr>
     <button> Submit Quiz</button>
