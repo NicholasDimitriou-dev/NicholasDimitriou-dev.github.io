@@ -33,18 +33,24 @@ h2:hover{
     /* 12 */
 }
 button:hover{
-    padding: 50px;
-    /* 13 */
+    border-radius: 25px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: dashed;
+    /* 15 */
 }
 input:hover{
     font-size: medium;
-    /* 14 */
+    /* 16 */
 }
 img{
     width: 200px;
     height: 200px;
-    /* 16 */
+
+    /* 18 */
 }
-#totalTime{
+button{
+    background-color: limegreen;
+    border: solid;
     
-}
+} 
