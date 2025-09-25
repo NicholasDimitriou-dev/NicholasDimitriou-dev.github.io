@@ -1,6 +1,7 @@
 document.querySelector("#wager").addEventListener("click", setWager);
 document.querySelector("#roll").addEventListener("click", spinTheWheel);
 let wager = 5;
+let profitVal = 0;
 let element1 = document.querySelector("#first");
 let imgElement1 = document.createElement("img");
 let element2 = document.querySelector("#second");
@@ -11,10 +12,20 @@ let h2El = document.createElement("h2");
 let h2El2 = document.createElement("h2");
 let h2El3 = document.createElement("h2");
 function setWager(){
-    wager =  document.querySelector("#selection").value;
+    let val =  document.querySelector("#selection").value;
+    if(val == "$50"){
+        wager = 50;
+    }else if(val == "$25"){
+        wager = 25;
+    }else if(val == "$10"){
+        wager = 10;
+    }else{
+        wager = 5;
+    }
+    
 }
 function spinTheWheel(){
-    reset();
+    reset()
     let imgs = ["cherry.jpg","lemon.jpg","star.jpg"];
     let imgName = ["cherry", "lemon", "star"];
     let arrayNum1 = Math.floor(Math.random()*3);
@@ -33,15 +44,37 @@ function spinTheWheel(){
     imgElement3.src = imgs[arrayNum3];
     imgElement3.width = 300;
     h2El3.textContent = imgName[arrayNum3];
+    if(imgElement1.src == imgElement2.src && imgElement2.src == imgElement3.src){
+       h2El.style.color = "limegreen";
+       h2El2.style.color = "limegreen";
+       h2El3.style.color = "limegreen"; 
+    }else{
+       h2El.style.color = "black";
+       h2El2.style.color = "black";
+       h2El3.style.color = "black";  
+    }
     element3.append(h2El3);
-    element3.append(imgElement3); 
-    if(arrayNum1 == arrayNum2 && arrayNum2 == arrayNum3){
+    element3.append(imgElement3);
+    profit() 
+    
+}
+function profit(){
+    if(imgElement1.src == imgElement2.src && imgElement2.src == imgElement3.src){
+        profitVal += 5*wager
+    }else{
+        profitVal -= wager;
+    }
+    if(profitVal>0){
         let out = document.querySelector("#output");
-        out.textContent = "You won " + wager*5+" dollars"
-        out.style.color = "green"
+        out.textContent = "You won " + profitVal+" dollars"
+        out.style.color = "limegreen"
+    }else if(profitVal== 0){
+        let out = document.querySelector("#output");
+        out.textContent = "You broke even"
+        out.style.color = "black"
     }else{
         let out = document.querySelector("#output");
-        out.textContent = "You lost " + wager+" dollars"
+        out.textContent = "You lost " + profitVal+" dollars"
         out.style.color = "red"
     }
 }
