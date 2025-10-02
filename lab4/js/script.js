@@ -97,7 +97,7 @@ async function usernameAva() {
         let data = await response.json();
         if(data.available){
              document.querySelector("#ava").textContent = "Username is available";   
-             document.querySelector("#ava").style.color = "green";
+             document.querySelector("#ava").style.color = "limegreen";
         }else{
             document.querySelector("#ava").textContent = "Username isn't available";
             document.querySelector("#ava").style.color = "red";
